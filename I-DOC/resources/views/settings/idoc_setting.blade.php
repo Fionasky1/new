@@ -78,7 +78,7 @@
                   <label for="Language" class="col-sm-3 col-form-label">{{ __('sentence.Language') }}</label>
                   <div class="col-sm-9">
                      <select class="form-control" name="language" id="Language">
-                        <option value="{{ App\Setting::get_option('language') }}">{{ $language[App\Setting::get_option('language')] }}</option>
+                        <option value="{{ App\Setting::get_option('language') }}">{{ App\Setting::get_option('language') }}</option>
                         <option value="fr">French</option>
                         <option value="en">English</option>
                         <option value="es">Spanish</option>

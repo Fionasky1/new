@@ -1,4 +1,4 @@
-<?php
+s<?php
 
 // sentence.php
 
@@ -28,7 +28,7 @@ return [
   'All Drugs' => 'Tout les Médicaments',
   'Drugs list' => 'Liste des Médicaments',
   'Trade Name' => 'Nom Commercial',
-  'Generic Name' => 'Nom Générique',  
+  'Generic Name' => 'Nom Générique',
   'Edit Drug' => 'Modifier un Médicament',
   'Drug added Successfully' => 'Médicament ajouté avec succès!',
   'Drug Edited Successfully' => 'Médicament mis à jour avec succès!',
@@ -92,8 +92,8 @@ return [
    'Forgot Your Password' => 'Mot de passe oublié ?',
    'Remember Me' => 'Se souvenir de moi',
    'Welcome' => 'Bienvenue à nouveau !',
-   'Save' => 'Sauvegarder',	
-   'Cancel' => 'Annuler',	
+   'Save' => 'Sauvegarder',
+   'Cancel' => 'Annuler',
    'Ready to Leave' => 'Prêt à partir?',
    'Ready to Leave Msg' => 'Sélectionnez «Se déconnecter» ci-dessous si vous êtes prêt à mettre fin à votre session en cours.',
 
@@ -167,4 +167,4 @@ return [
     'No Invoices Available' => 'Aucune facture disponible',
     'Weight' => 'Poids',
     'Height' => 'Taille',
-]; 
+];

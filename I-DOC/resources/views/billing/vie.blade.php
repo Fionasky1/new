@@ -62,7 +62,7 @@
                         <td colspan="3">{{ __('sentence.Empty Invoice') }}</td>
                      </tr>
                      @endforelse
-                     @empty(!$billing_item)
+                     @empty($billing_item)
                      @if(App\Setting::get_option('vat') > 0)
                      <tr>
                         <td colspan="2"><strong>{{ __('sentence.Sub-Total') }}</strong></td>

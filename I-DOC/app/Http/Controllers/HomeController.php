@@ -25,13 +25,13 @@ class HomeController extends Controller
      * Show the application dashboard.
      *
      * @return \Illuminate\Contracts\Support\Renderable
-     */ 
-   
+     */
+
 
     public function index()
     {
 
-        
+
         $total_patients = User::where('role','patient')->count();
         $total_patients_today = User::where('role','patient')->wheredate('created_at', Today())->count();
         $total_appointments = Appointment::all()->count();
@@ -43,13 +43,13 @@ class HomeController extends Controller
         $total_payments_month = Billing_item::whereMonth('created_at',date('m'))->sum('invoice_amount');
         $total_payments_year = Billing_item::whereYear('created_at',date('Y'))->sum('invoice_amount');
 
-        
-   
+
+
 
 
         return view('home', [
-            'total_patients' => $total_patients, 
-            'total_prescriptions' => $total_prescriptions, 
+            'total_patients' => $total_patients,
+            'total_prescriptions' => $total_prescriptions,
             'total_patients_today' => $total_patients_today,
             'total_appointments' => $total_appointments,
             'total_appointments_today' => $total_appointments_today,
@@ -57,11 +57,11 @@ class HomeController extends Controller
             'total_payments_month' => $total_payments_month,
             'total_payments_year' => $total_payments_year
         ]);
-   
+
     }
 
 
-   
+
     public function lang($locale){
 
         App::setLocale($locale);
@@ -70,5 +70,5 @@ class HomeController extends Controller
     }
 
 
-    
+
 }

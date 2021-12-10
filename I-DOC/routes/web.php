@@ -27,7 +27,9 @@ Auth::routes(['register' => true]);
 
 Route::get('/admin_dashboard', 'AdminController@index')->name('admin');
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/lang/{locale}', 'HomeController@lang');
+//Route::get('/lang/{locale}', 'HomeController@lang');
+
+
 
 
 //Patients
